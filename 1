@@ -1,0 +1,251 @@
+@import url(//dablulite.github.io/css-snippets/TabsV2HomeIcon/import.css);
+@import url(//raw.githubusercontent.com/lumap/css-snippets/main/clean-user-popout-final-v2.css);
+@import url(https://codef53.github.io/CSS-Snippets/discord/RevertUserPopouts.css);
+@import url(//dablulite.github.io/css-snippets/ConsistentChatbar/import.css);
+@import url(//dablulite.github.io/css-snippets/HorizontalServerList/import.css);
+.accountProfilePopoutWrapper-3GskID {
+  left: 0;
+}
+
+/* deletes the titlebar and moves the close, maximize and minimize buttons to the toolbar */
+.platform-win .typeWindows-2-g3UY { 
+     height: 0px; 
+     margin-top: 0; 
+     position: absolute; 
+     top: 31px; 
+     right: 0; 
+     width: 9%; 
+     background: rgba(254, 254, 254, 0); 
+   } 
+   .platform-win .winButtonClose-3Q8ZH5 { 
+     border-top-right-radius: 1; 
+     border-bottom-right-radius: 0; 
+   } 
+   .platform-win .winButton-3UMjdg { 
+     position: relative; 
+     top: -32px; 
+     right: 0px; 
+     height: 46px; 
+     width: 40px; 
+   } 
+   .platform-win .winButton-3UMjdg:not(.winButtonClose-3Q8ZH5):hover { 
+     background-color: rgba(255, 255, 255, 0.1); 
+   } 
+   .platform-win .container-ZMc96U { 
+     padding-right: 125px; 
+   } 
+   .platform-win .wordmarkWindows-2dq6rw { 
+     display: none; 
+   }
+
+/* centered usernames */
+.usernameSection-3FppkT,
+.container-3g15px {
+    text-align: center;
+}
+
+.customStatus-19KW6v {
+    display: flex;
+}
+
+.nameTag-35jqbZ,
+.customStatus-19KW6v,
+.tabBar-2hXqzU {
+    justify-content: center;
+}
+
+/* bigger stream preview */
+[class*=streamPreview-]:not([class*=content-]) {
+  width: 504px;
+}
+
+[class*=previewContainer-] {
+  height: 284px;
+}
+
+/* compact channels */
+.container-1NXEtd {
+    max-height: 200%;
+    min-height: 110%;
+}
+.container-1NXEtd ~ .panels-3wFtMD {
+    position: absolute;
+    width: 240px;
+    bottom: 0;
+}
+.container-1NXEtd .mainContent-20q_Hp,
+.iconItem-1EjiK0 { padding: 2px 0 }
+.container-1NXEtd .wrapper-NhbLHG,
+.container-1NXEtd .content-1gYQeQ { padding: 0 }
+.containerDefault-3TQ5YN { padding-top: 8px }
+
+/* remove notes from the user popout */
+.section-28YDOf:has(.note-1NN2aP) {
+    display: none;
+    padding-bottom: 23px;
+}
+
+[class*=memberSinceContainer-] {
+    margin-bottom: 14px;
+}
+
+/* remove discord's stickers */
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Mallow The Rascal"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Wumpus Beyond"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Doggo Replies"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Cheerful Choco"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Hammy Ham"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Smug Shiba"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Clyde Bot"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Chaos Cat"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Robo Nelly"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Sassy Peach"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Lonely Leif"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Wumpus & Co: Daily Routine"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Phibi The Scholar"]),
+#sticker-picker-tab-panel .listItems-6eZzQ1 div:has(div[aria-label="Category, Melty Chihuahua"]),
+#sticker-picker-tab-panel hr.guildCategorySeparator-1YkjLr,
+.stickerCategory-2f6iSo[aria-label="Mallow The Rascal"],
+.stickerCategory-2f6iSo[aria-label="Wumpus Beyond"],
+.stickerCategory-2f6iSo[aria-label="Doggo Replies"],
+.stickerCategory-2f6iSo[aria-label="Cheerful Choco"],
+.stickerCategory-2f6iSo[aria-label="Hammy Ham"],
+.stickerCategory-2f6iSo[aria-label="Smug Shiba"],
+.stickerCategory-2f6iSo[aria-label="Clyde Bot"],
+.stickerCategory-2f6iSo[aria-label="Chaos Cat"],
+.stickerCategory-2f6iSo[aria-label="Robo Nelly"],
+.stickerCategory-2f6iSo[aria-label="Sassy Peach"],
+.stickerCategory-2f6iSo[aria-label="Lonely Leif"],
+.stickerCategory-2f6iSo[aria-label="Wumpus & Co: Daily Routine"],
+.stickerCategory-2f6iSo[aria-label="Phibi The Scholar"],
+.stickerCategory-2f6iSo[aria-label="Melty Chihuahua"],
+.standardStickerShortcut-ObSns3 {
+    display: none;
+}
+
+/* Makes messages slide into chat 
+Try changing the second value '0.6s' and fiddle around with it to change the speed*/
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.6s ease;
+}
+
+/* reveal the timestamp on messages when you hover over the place */
+[class*=timestampInline-] {
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+}
+
+[class^=message-]:hover [class*=timestampInline-] {
+  opacity: 1;
+}
+
+/* verical screenshare selection */
+.sourceContainer-1uqUbz {
+    flex-direction: column;
+}
+.sourceName-3Wf8QG {
+    width: unset;
+}
+.tile-3POX2m > .flex-2S1XBF {
+    flex-direction: row;
+    justify-content: start;
+}
+.tile-3POX2m > .flex-2S1XBF > .flex-2S1XBF {
+    flex: unset !important;
+    margin-right: 16px;
+}
+
+/* hide start activity when you watch screenshare*/
+.buttonContainer-1sjtPU{
+  display: none;
+}
+
+/* hide a bunch of random things that 99% of people dont even use */
+a[href="https://support.discord.com"], /* help button */
+.recentsIcon-F3eO1o, /* inbox button */
+.nowPlayingColumn-1eCBCN, /* active now sidebar */
+.newChannel-3q3LPr, /* the "NEW" text thats next to channels */
+div[aria-label*="Show User Profile"], /* user profile button */
+button[aria-label="Send a gift"] /* send gift button */
+{ 
+  display: none;
+}
+
+/* ShowMeYourName but @ instead of parentheses */
+.vc-smyn-suffix:before {
+    content: "@" !important;
+}
+.vc-smyn-suffix:after {
+    content: "" !important;
+}
+
+/* user panel buttons hidden until hover */
+.button-12Fmur:not(.vc-plugins-info-button) {
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out;
+}
+
+.button-12Fmur:hover {
+    opacity: 1;
+}
+
+/* hides the billing settings stuff from discord settings */
+.header-2F5_LB:has(+ .premiumTab-39eQzY) /* Payment Settings */,
+.premiumTab-39eQzY /* Nitro */,
+.premiumTab-39eQzY + .item-2GWPIy /* Server Boost */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy /* Subscriptions */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Gift Inventory */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy /* Billing */,
+.premiumTab-39eQzY + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .item-2GWPIy + .separator-2N511j  /* Divider */ {
+  display: none;
+}
+
+/* removes nitro tab in the dm page */
+.linkButton-2NshQj > a[href="/store"] {
+    display: none;
+}
+
+/* replace dashes with spaces in channel names */
+@font-face {
+    font-family: "Dashless";
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+}
+
+[data-list-item-id^=channels___], /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=resultChannel], /* channel name in search */
+[class^=channelMention], /* channel mentions in chat */
+[class^=placeholder][class*=slateTextArea] /* "Send a message in #blah" */
+{
+    font-family: "Dashless", var(--font-primary);
+}
+
+/* disable white dot notifications in chat */
+.unreadRelevant-2f-VSK {
+  display: none;
+}
+
+/* disable useless icons (camera, start activity, soundboard) */
+[aria-label="カメラを利用できません"],
+[aria-label="アクティビティを開始"],
+[aria-label="アクティビティを開始"]+div {
+  display:none;
+}
+.controlButton-2PMNom:has([aria-label="カメラを利用できません"]) {
+  display: none;
+}
+
+/* hide family center */
+[aria-label="Family Center"] {
+  display: none;
+}
